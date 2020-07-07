@@ -88,36 +88,42 @@ main {
   align-items: center;
 }
 
-#main-nav ul {
+#main-nav .main-ul {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-#main-nav ul li {
+#main-nav .main-ul .parent-dropdown {
+  height: 100%;
   padding-right: 30px;
   display: flex;
-  align-self: center;
+  align-items: center;
 }
 
-#main-nav ul li.logo {
+#main-nav .main-ul .logo {
   padding-right: 60px;
 }
 
-#main-nav ul li a {
+#main-nav .main-ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
   color: #a7a8aa;
 }
 
-#main-nav ul li a:hover {
+#main-nav .main-ul li:hover .nav-title {
   color: black;
 }
 
-#main-nav ul li.logo a {
+#main-nav .main-ul .logo a {
   font-size: 30px;
   font-weight: 600;
   color: black;
 }
 
 .download-btn {
-  padding: 15px;
+  padding: 10px 15px;
   color: white;
   background-color: black;
   border-radius: 10px;
@@ -125,6 +131,55 @@ main {
 
 .download-btn:hover {
   background-color: #3e4043;
+}
+
+/* ---------------- DROPDOWN MENU ----------------  */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+#main-nav .parent-dropdown {
+  position: relative;
+}
+
+#main-nav .dropdown {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 80%;
+  right: -40px;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  border-radius: 0.5rem;
+}
+
+#main-nav .dropdown.denaro {
+  width: 230px;
+}
+
+#main-nav .dropdown.investimenti {
+  width: 310px;
+}
+
+#main-nav .dropdown.altro {
+  width: 240px;
+}
+
+#main-nav .dropdown.controllo {
+  width: 150px;
+}
+
+#main-nav .dropdown ul li a {
+  padding: 20px 15px;
+}
+
+#main-nav .dropdown ul li:hover a {
+  color: black;
 }
 
 /* ---------------- SEZIONE JUMBO ----------------  */
