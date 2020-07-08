@@ -29,8 +29,18 @@ $(document).ready(function() {
     $('.parent-dropdown-hamburger').click(function() {
       // al click su i singoli li della navbar del dropdown ad hamburger fa apparire o sparire i sottoelementi
       $(this).children('.child-dropdown-hamburger').slideToggle();
+
+      // chiude il dropdown al suo li fratello quando un altro viene aperto
+      $(this).siblings().children('.child-dropdown-hamburger').slideUp();
+
+      // cambia la freccia al suo li fratello quando un altro viene aperto
+      if ($(this).siblings().find('.arrow').hasClass('fa-chevron-up')) {
+        $(this).siblings().find('.arrow').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+      }
+
       // cambia la freccia da down a up e viceversa
       $(this).find('.arrow').toggleClass('fa-chevron-down fa-chevron-up');
+
     });
 
 

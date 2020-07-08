@@ -310,7 +310,7 @@ main {
   display: none;
 }
 
-.navbar-dropdown-hamburger-up {
+.separator {
   border-bottom: 1px solid lightgrey;
 }
 
