@@ -1,0 +1,114 @@
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 0px) and (max-width : 767px) {
+
+/* header */
+header, #main-nav .main-ul .parent-dropdown, #main-nav .download-btn {
+  display: none;
+}
+
+/* main */
+
+#main-nav .fa-bars {
+  display: block;
+}
+
+/* jumbo */
+
+#jumbo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#jumbo-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+#jumbo-left > * {
+  padding-bottom: 20px;
+}
+
+#jumbo-left h2 {
+  font-size: 40px;
+  width: 80%;
+}
+
+#jumbo-left p {
+  width: 100%;
+}
+
+#jumbo-left form, #jumbo-left span {
+  display: none;
+}
+
+#jumbo-right {
+  width: 100%;
+}
+
+#jumbo-right img {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#jumbo-right .dito {
+  display: block;
+}
+
+/* footer */
+
+footer {
+  display: block;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+  #jumbo-left {
+    width: 70%;
+    height: 100%;
+  }
+
+  #jumbo-left h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  #jumbo-right img {
+    width: 75%;
+  }
+
+  #main-nav .main-ul .logo {
+    padding-right: 30px;
+  }
+
+  #main-nav .btn {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+  #jumbo-left h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+
+}
