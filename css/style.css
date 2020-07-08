@@ -251,7 +251,7 @@ main {
 }
 
 #jumbo-right img {
-  width: 60%;
+  width: 50%;
 }
 
 #jumbo-right .dito {
@@ -262,6 +262,21 @@ main {
   font-size: 25px;
   width: 100%;
 }
+
+/* ---------------- HAMBURGER DROPDOWN ----------------  */
+
+#hamburger-dropdown {
+  display: none;
+  z-index: 10;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.show-hamburger-dropdown {
+  display: none;
+}
+
 
 /* ---------------- FOOTER ----------------  */
 

@@ -60,6 +60,10 @@ header, #main-nav .main-ul .parent-dropdown, #main-nav .download-btn {
   display: block;
 }
 
+.show-hamburger-dropdown {
+  display: block;
+}
+
 /* footer */
 
 footer {
