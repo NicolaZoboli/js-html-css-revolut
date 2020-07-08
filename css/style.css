@@ -32,6 +32,8 @@ header {
 
 }
 
+/* ---------------- NAV DEL HEADER ----------------  */
+
 header nav {
   height: 100%;
   display: flex;
@@ -128,7 +130,7 @@ main {
 }
 
 
-
+/* ---------------- PULSANTE SCARICA ----------------  */
 .download-btn {
   width: 120px;
   padding: 10px 15px;
@@ -268,7 +270,6 @@ main {
 #hamburger-dropdown {
   display: none;
   z-index: 10;
-  background-color: red;
   width: 100%;
   height: 100%;
 }
@@ -279,7 +280,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
 }
 
 #hamburger-dropdown .header-dropdown .header-dropdown-left {
@@ -304,6 +304,54 @@ main {
 
 .show-hamburger-dropdown {
   display: none;
+}
+
+#hamburger-dropdown .child-dropdown-hamburger {
+  display: none;
+}
+
+.navbar-dropdown-hamburger-up {
+  border-bottom: 1px solid lightgrey;
+}
+
+.parent-dropdown-hamburger {
+  padding: 30px 0;
+}
+
+.parent-dropdown-hamburger a {
+  color: #a7a8aa;
+  font-weight: 500;
+}
+
+.parent-dropdown-hamburger .container-parent-dropdown .nav-title:hover, .parent-dropdown-hamburger .container-parent-dropdown .arrow:hover  {
+  color: black;
+}
+
+.container-parent-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.child-dropdown-hamburger li {
+  padding-top: 30px;
+}
+
+.child-dropdown-hamburger li a {
+  color: #a7a8aa;
+  padding: 15px 0;
+}
+
+.child-dropdown-hamburger li:hover a {
+  color: black;
+}
+
+#hamburger-dropdown .header-dropdown .header-dropdown-left a.black{
+  color: black;
+}
+
+.container-parent-dropdown .arrow {
+  color: #a7a8aa;
 }
 
 

@@ -30,9 +30,12 @@
 
     <!-- MAIN -->
     <main class="padding-generale">
+      <!-- NAV DEL MAIN -->
       <nav id="main-nav">
         <ul class="main-ul">
+          <!-- LOGO -->
           <li class="logo"><h1><a href="#">Revolut</a></h1></li>
+          <!-- LI VERI E PROPRI DELLA NAV -->
           <li class="parent-dropdown">
             <a class="nav-title" href="#">Denaro</a>
             <div class="dropdown denaro">
@@ -44,6 +47,7 @@
               </ul>
             </div>
           </li>
+
           <li class="parent-dropdown">
             <a class="nav-title" href="#">Investimenti e Risparmi</a>
             <div class="dropdown investimenti">
@@ -55,6 +59,7 @@
               </ul>
             </div>
           </li>
+
           <li class="parent-dropdown">
             <a class="nav-title" href="#">Controllo</a>
             <div class="dropdown controllo">
@@ -64,6 +69,7 @@
               </ul>
             </div>
           </li>
+
           <li class="parent-dropdown">
             <a class="nav-title" href="#">Altro</a>
             <div class="dropdown altro">
@@ -76,6 +82,7 @@
               </ul>
             </div>
           </li>
+
           <li class="parent-dropdown">
             <a class="nav-title" href="#">Plans</a>
             <div class="dropdown plans">
@@ -88,38 +95,179 @@
               </ul>
             </div>
           </li>
+
         </ul>
+        <!-- PULSANTE SCARICA APP -->
         <div class="btn">
           <a class="download-btn" href="#">Scarica l'app</a>
         </div>
+        <!-- PULSANTE MOSTRA DROPDOWN HAMBURGER -->
         <a class="show-hamburger-dropdown" href="#">
           <i class="fas fa-bars"></i>
         </a>
 
       </nav>
 
+      <!-- DROPDOWN HAMBURGER -->
       <div id="hamburger-dropdown">
 
-        <div class="header-dropdown">
+        <!-- HEADER DEL DROPDOWN -->
+        <div class="header-dropdown padding-generale">
           <div class="header-dropdown-left">
-            <span><a href="#">Personale</a></span>
+            <span><a class="black" href="#">Personale</a></span>
             <span><a href="#">Business</a></span>
           </div>
 
+          <!-- PULSANTE HIDE DROPDOWN -->
           <a class="hide-hamburger-dropdown" href="#">
             <i class="fas fa-times"></i>
           </a>
         </div>
 
-        <nav class="navbar-dropdown-hamburger">
-          <ul>
-            
+        <!-- NAV ALL'INTERNO DEL DROPDOWN -->
+        <nav class="navbar-dropdown-hamburger padding-generale">
+          <!-- LISTA SUPERIORE DELLA NAVBAR -->
+          <ul class="navbar-dropdown-hamburger-up">
+
+            <!-- ELEMENTI DELL NAVBAR DEL DROPDOWN -->
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title padding-bottom black" href="#">Denaro</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Invia denaro all'estero</a></li>
+                  <li><a href="#">Effettua e ricevi pagamenti</a></li>
+                  <li><a href="#">Paga con Apple Pay</a></li>
+                  <li><a href="#">Paga con GPay</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Investimenti e Risparmi</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Effettua compravendite di titoli azionari</a></li>
+                  <li><a href="#">Effettua compravendite di prodotti</a></li>
+                  <li><a href="#">Effettua compravendite di Crypto</a></li>
+                  <li><a href="#">Effettua compravendite di Salvadanai</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Controllo</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Imposta i budget</a></li>
+                  <li><a href="#">Tutelati</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Altro</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Assicura te stesso all'estero</a></li>
+                  <li><a href="#">Assicura il tuo dispositivo</a></li>
+                  <li><a href="#">Dona agli enti di beneficienza</a></li>
+                  <li><a href="#">Prossimamente</a></li>
+                  <li><a href="#">Scopri i premi</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Plans</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Standard</a></li>
+                  <li><a href="#">Premium</a></li>
+                  <li><a href="#">Metal</a></li>
+                  <li><a href="#">Junior</a></li>
+                  <li><a href="#">Tariffazione</a></li>
+                </ul>
+              </div>
+            </li>
+
           </ul>
+
+          <!-- LISTA INFERIORE DELLA NAVBAR -->
+          <ul>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Azienda</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Chi siamo</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Lavora con noi</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                  <li><a href="#">Influencer</a></li>
+                  <li><a href="#">Contatto</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Aiuto</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Centro assistenza</a></li>
+                  <li><a href="#">Sicurezza</a></li>
+                  <li><a href="#">Stato di sistema</a></li>
+                  <li><a href="#">API sviluppatore</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="parent-dropdown-hamburger">
+              <div class="container-parent-dropdown">
+                <a class="nav-title" href="#">Seguici</a>
+                <a href="#"><i class="arrow fas fa-chevron-down"></i></a>
+              </div>
+              <div class="child-dropdown-hamburger">
+                <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Dribbble</a></li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+
         </nav>
       </div>
 
-
+      <!-- SEZIONE JUMBO -->
       <section id="jumbo">
+
+        <!-- SEZIONE SINISTRA DEL JUMBO (QUELLA IN ALTO NELLA VISUALE SMARTPHONE) -->
         <div id="jumbo-left">
           <h2>Ottieni di più dai tuoi fondi</h2>
           <p>Cambia denaro senza commissioni nascoste. Acquista Crypto e oro, oppure effettua una compravendita di azioni a partire da $ 1 e gestisci il tuo denaro con l'analisi della spesa. Unisciti a più di 10 milione di clienti Revolut.</p>
@@ -134,13 +282,16 @@
           </span>
         </div>
 
+        <!-- SEZIONE DESTRA DEL JUMBO (QUELLA IN BASSO NELLA VISUALE SMARTPHONE) -->
         <div id="jumbo-right">
           <img src="img/home.png" alt="">
           <span class="dito">Tutta la tua vita finanziaria a portata di dito</span>
         </div>
+
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <a class="download-btn" href="#">Scarica l'app</a>
     </footer>
