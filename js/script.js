@@ -26,20 +26,14 @@ $(document).ready(function() {
     $('main').addClass('padding-generale');
     });
 
-    // al click su i singoli li della navbar del dropdown ad hamburger fa apparire o sparire i sottoelementi
     $('.parent-dropdown-hamburger').click(function() {
+      // al click su i singoli li della navbar del dropdown ad hamburger fa apparire o sparire i sottoelementi
       $(this).children('.child-dropdown-hamburger').slideToggle();
+      // cambia la freccia da down a up e viceversa
+      $(this).find('.arrow').toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-    // teoricamente al click sull'li della navbar dovrebbe cambiare la classe dell'elemento .arrow togliendo fa-chevron-down e aggiungendo fa-chevron-up e viceversa
-    // effettivamente non lo fa. Ho ancora qualche dubbio sul this. senza cambia tutte le classi. con non ne cambia nessuna
-    $('.parent-dropdown-hamburger').click(function() {
-      if ($(this).children('.arrow').hasClass('fa-chevron-down')) {
-        $(this).children('.arrow').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-      } else if ($(this).children('.arrow').hasClass('fa-chevron-up')) {
-        $(this).children('.arrow').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-      }
-    });
+
 
 
 });
