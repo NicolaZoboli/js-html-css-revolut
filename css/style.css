@@ -273,6 +273,35 @@ main {
   height: 100%;
 }
 
+#hamburger-dropdown .header-dropdown {
+  height: 8vh;
+  background-color: #f3f4f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+#hamburger-dropdown .header-dropdown .header-dropdown-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#hamburger-dropdown .header-dropdown .header-dropdown-left > * {
+  padding-right: 15px;
+}
+
+#hamburger-dropdown .header-dropdown .header-dropdown-left a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #a7a8aa;
+}
+
+#hamburger-dropdown .header-dropdown .header-dropdown-left a:hover {
+  color: black;
+}
+
 .show-hamburger-dropdown {
   display: none;
 }
